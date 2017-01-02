@@ -28,8 +28,8 @@ module Awspec::Helper
         res.task_definition
       end
 
-      def find_ecs_service(service)
-        res = ecs_client.describe_services(services: [service])
+      def find_ecs_service(cluster_name, service)
+        res = ecs_client.describe_services(cluster: cluster_name, services: [service])
         res.services.first if res.services.count == 1
       end
     end

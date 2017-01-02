@@ -472,10 +472,27 @@ EcrRepository resource type.
 EcsCluster resource type.
 
 ### exist
+```ruby
+describe ecs_cluster('my-ecs-cluster') do
+  it { should be_available }
+end
+```
+
 
 ### be_active
+```ruby
+describe ecs_cluster('my-ecs-cluster') do
+  it { should be_active }
+end
+```
+
 
 ### be_inactive
+```ruby
+describe ecs_cluster('my-ecs-cluster') do
+  it { should be_inactive }
+end
+```
 
 
 ## <a name="ecs_container_instance">ecs_container_instance</a>
@@ -483,10 +500,27 @@ EcsCluster resource type.
 EcsContainerInstance resource type.
 
 ### exist
+```ruby
+describe ecs_container_instance('my-ecs-container-instance') do
+  it { should be_available }
+end
+```
+
 
 ### be_active
+```ruby
+describe ecs_container_instance('my-ecs-container-instance') do
+  it { should be_active }
+end
+```
+
 
 ### be_inactive
+```ruby
+describe ecs_container_instance('my-ecs-container-instance') do
+  it { should be_inactive }
+end
+```
 
 
 ## <a name="ecs_service">ecs_service</a>
@@ -494,12 +528,29 @@ EcsContainerInstance resource type.
 EcsService resource type.
 
 ### exist
+```ruby
+describe ecs_service('my-ecs-service') do
+  it { should be_available }
+end
+```
+
 
 ### be_active
+```ruby
+describe ecs_service('my-ecs-service') do
+  it { should be_active }
+end
+```
+
 
 ### be_draining
 
 ### be_inactive
+```ruby
+describe ecs_service('my-ecs-service') do
+  it { should be_inactive }
+end
+```
 
 
 ## <a name="ecs_task_definition">ecs_task_definition</a>
@@ -507,10 +558,27 @@ EcsService resource type.
 EcsTaskDefinition resource type.
 
 ### exist
+```ruby
+describe ecs_task_definition('my-ecs-task-definition') do
+  it { should be_available }
+end
+```
+
 
 ### be_active
+```ruby
+describe ecs_task_definition('my-ecs-task-definition') do
+  it { should be_active }
+end
+```
+
 
 ### be_inactive
+```ruby
+describe ecs_task_definition('my-ecs-task-definition') do
+  it { should be_inactive }
+end
+```
 
 
 ## <a name="elasticache">elasticache</a>
